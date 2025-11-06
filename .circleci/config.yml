@@ -1,10 +1,10 @@
 version: 2.1
-
 orbs:
-  my-orb: kamlesh/my-circleci-orb@dev:first
+  mycircleciorb: kamlesh/my-circleci-orb@dev:alpha
 
 workflows:
-  say-hello-workflow:
+  greet:
     jobs:
-      - my-orb/say-hello:
-          name: "Kamlesh"
+      - mycircleciorb/greet:
+          name: "CircleCI"
+          
